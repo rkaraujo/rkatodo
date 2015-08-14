@@ -11,6 +11,8 @@
 	
 	<h2>To Do</h2>
 	
-	<p>{{.Content}}</p>
+	{{ range .TodoList }}
+		<p>{{.Content}} - {{.Created}}</p>
+	{{ end }}
 
 </html>
